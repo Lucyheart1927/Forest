@@ -1,0 +1,13 @@
+body {
+    background-color: #052110; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#header_img {
+    background-image: url('../images/forest_header.jpg'); 
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+}
+
