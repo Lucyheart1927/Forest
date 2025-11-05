@@ -1,0 +1,114 @@
+/* ---- existing variables and base (unchanged) ---- */
+:root{
+  --forest-900:#0b3d2e;
+  --forest-800:#134f39;
+  --forest-700:#1a5e46;
+  --forest-500:#2c8c68;
+  --forest-300:#a3d9a5;
+  --forest-100:#eaf7ef;
+}
+
+html,body{ background: var(--forest-900); color: var(--forest-100); min-height: 100%; }
+
+h1,h2,h3,h4,h5,h6,
+p,.lead,.card-title,.card-text,
+.nav-link,.form-label,label{ color: var(--forest-100); }
+
+a{ color: var(--forest-300); text-decoration: none; }
+a:hover{ text-decoration: underline; }
+
+.bg-forest-soft{ background: var(--forest-800); }
+
+/* ---- NAVBAR THEME ---- */
+.navbar-forest{
+  background: var(--forest-800);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.navbar-forest .navbar-brand,
+.navbar-forest .nav-link{
+  color: var(--forest-100);
+}
+.navbar-forest .nav-link.active,
+.navbar-forest .nav-link:focus,
+.navbar-forest .nav-link:hover{
+  color: var(--forest-300);
+}
+
+/* Dark dropdown */
+.navbar-forest .dropdown-menu{
+  background: #0f4635;
+  border: 1px solid rgba(255,255,255,.08);
+}
+.navbar-forest .dropdown-item{
+  color: var(--forest-100);
+}
+.navbar-forest .dropdown-item:hover,
+.navbar-forest .dropdown-item:focus{
+  background: var(--forest-700);
+  color: #fff;
+}
+
+/* Toggler visible on dark bg */
+.navbar-forest .navbar-toggler{
+  border-color: rgba(255,255,255,.25);
+}
+
+/* ---- HERO + CARDS ---- */
+.hero .hero-img{ max-width: 80%; border-radius: .5rem; }
+
+.card-forest{
+  background: #0f4635;
+  border: 1px solid rgba(255,255,255,.08);
+}
+.card-forest .card-img-top{ border-bottom: 1px solid rgba(255,255,255,.08); }
+
+/* ---- BUTTONS ---- */
+.btn-forest{
+  background: var(--forest-700);
+  color: #fff;
+  border: 1px solid var(--forest-700);
+}
+.btn-forest:hover{
+  background: var(--forest-500);
+  border-color: var(--forest-500);
+  color: #fff;
+}
+.btn-forest-outline{
+  background: transparent;
+  color: var(--forest-100);
+  border: 1px solid var(--forest-300);
+}
+.btn-forest-outline:hover{
+  background: var(--forest-700);
+  color: #fff;
+  border-color: var(--forest-700);
+}
+
+/* Make the default outline-success fit the palette */
+.btn-outline-success{
+  color: var(--forest-300);
+  border-color: var(--forest-300);
+}
+.btn-outline-success:hover{
+  color: #fff;
+  background-color: var(--forest-700);
+  border-color: var(--forest-700);
+}
+
+/* ---- FORMS (kept for future) ---- */
+.form-control,.form-select{
+  background: #103f30;
+  color: var(--forest-100);
+  border: 1px solid rgba(255,255,255,.15);
+}
+.form-control::placeholder{ color: rgba(234,247,239,.6); }
+.form-control:focus{
+  background: #103f30;
+  color: var(--forest-100);
+  border-color: var(--forest-300);
+  box-shadow: 0 0 0 .2rem rgba(163,217,165,.15);
+}
+
+/* Utility tweaks */
+.text-muted{ color: rgba(234,247,239,.7) !important; }
+.btn-warning{ color:#1c2a22; } /* better contrast on dark */
